@@ -1,0 +1,100 @@
+
+/* General container styling */
+.reservation-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Style for each section */
+.reservation-form .section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+/* Heading style for sections */
+.reservation-form .section h2 {
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+    color: #333;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+/* Form labels styling */
+.reservation-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #555;
+}
+
+/* Input and select elements */
+.reservation-form .form-control {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+/* Checkbox inputs */
+.reservation-form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Table styling for charges summary */
+.reservation-form .charges-summary table {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+
+.reservation-form .charges-summary table td,
+.reservation-form .charges-summary table th {
+    padding: 10px;
+    border: none; /* Hide all borders */
+
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+/* Bold and larger font for the total row */
+.reservation-form .charges-summary table tr:last-child td {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Primary button styling */
+.reservation-form button {
+    display: block;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reservation-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .reservation-form .section {
+        padding: 10px;
+    }
+
+    .reservation-form button {
+        font-size: 0.9rem;
+    }
+}
