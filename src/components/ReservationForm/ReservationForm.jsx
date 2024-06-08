@@ -83,7 +83,7 @@ const ReservationForm = () => {
     const additionalCharges = [
         { name: 'Collision Damage Waiver', amount: 9.00, checked: formData.collisionDamageWaiver },
         { name: 'Liability Insurance', amount: 15.00, checked: formData.liabilityInsurance },
-        { name: 'Rental Tax (11.5%)', amount: (selectedVehicle?.rates.daily + selectedVehicle?.rates.weekly) * 0.115, checked: formData.rentalTax },
+        { name: 'Rental Tax (11.5%)', amount: (selectedVehicle?.rates.hourly + selectedVehicle?.rates.daily + selectedVehicle?.rates.weekly) * 0.115, checked: formData.rentalTax },
     ];
 
     return (
