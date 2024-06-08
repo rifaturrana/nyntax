@@ -7,7 +7,6 @@ import { calculateCharges } from '../../utils/calculateCharges';
 
 const ReservationForm = () => {
     const { vehicles, vehicleTypes } = useFetch(`${import.meta.env.VITE_API_URL}/carsList`);
-    console.log(vehicles, vehicleTypes);
 
     const [formData, setFormData] = useState({
         pickupDate: '',
